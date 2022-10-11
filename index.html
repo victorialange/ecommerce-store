@@ -5,8 +5,65 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>STARTER - Toybox Homepage</title>
+	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    
+
+	<!-- Skip Link -->
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+	<!-- Nav Section -->
+	<nav class="navBar">
+		<div class="wrapper">
+			<!-- Slide out menu button -->
+			<button class="menuIcon">
+				<img src="./assets/menu-button.svg" alt="button to open slide out navigation menu">
+			</button>
+
+			<!-- Logo -->
+			<a href="./index.html" class="logo">
+				<h1>Toybox</h1>
+			</a>
+
+			<!-- Cart -->
+			<div class="cartFlex">
+				<!-- Search -->
+				<button class="menuIcon">
+					<img src="./assets/search.svg" alt="" class="searchIcon">
+				</button>
+				<!-- Shopping Bag -->
+				<a href="#">
+					<img src="./assets/shop-bag.svg" alt="link to cart page" class="bagIcon">
+				</a>
+
+				<!-- Counter -->
+				<div class="counter">
+					<p>0</p>
+				</div><!-- END .counter -->
+			</div><!-- END .cartFlex -->
+		</div><!-- END .wrapper -->
+
+		<!-- Slide Out Nav -->
+		<div class="slideOutNav">
+			<!-- Close Button -->
+			<div class="navCloseButton">
+				<button>
+					<img src="./assets/menu-close.svg" alt="close slide out navigation menu">
+				</button>
+			</div><!-- END .navCloseButton -->
+
+			<!-- Nav & UL -->
+			<nav>
+				<ul class="mainMenu">
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div><!-- END .slideOutNav -->
+	</nav>
+
 </body>
 </html>
