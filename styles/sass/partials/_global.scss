@@ -87,3 +87,9 @@ button {
           }
       }
   }
+
+  // all img respect width of parent container, by default inline-block, weird white space, makes them behave more predictable
+  img {
+    max-width: 100%;
+    display: block;
+  }
