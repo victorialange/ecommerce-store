@@ -1,0 +1,43 @@
+@use "./variables";
+
+@media (max-width: 1040px) {
+    header {
+        margin-top: 70px; 
+        // push down content, height of nav approximately
+
+    }
+}
+
+@media (max-width: 1000px) {
+    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+    header {
+        .headerContentContainer {
+            padding: 0 50px;
+        }
+        h3 {
+            font-size: 2.2rem;
+        }
+    }
+    
+  }
+  
+  @media (max-width: 800px) {
+    /* all of our styles for TABLET devices will go within this breakpoint */
+    header {
+        flex-direction: column;
+        //centers content
+        .headerImgContainer {
+            width: 100%;
+            //overflow: hidden
+            //height: 50vh
+            //object-fit: cover for img
+        }
+        .headerContentContainer {
+            width: 65%;
+        }
+    }
+  }
+  
+  @media (max-width: 500px) {
+    /* all of our styles for MOBILE devices will go within this breakpoint */
+  }

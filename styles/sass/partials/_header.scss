@@ -4,8 +4,10 @@ header {
     background: variables.$tertiary;
     margin-bottom: 90px;
     display: flex;
+    margin-top: 70px;
     align-items: center;
-    flex-wrap: wrap; //makes it easier for later on for mobile
+    flex-wrap: wrap; 
+    //makes it easier for later on for mobile
     .headerImgContainer {
         width: 45%;
     }
