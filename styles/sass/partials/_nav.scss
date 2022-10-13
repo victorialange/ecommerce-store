@@ -1,0 +1,33 @@
+@use './variables';
+
+.navBar {
+    position: fixed; //makes element only take up minimal space, as wide as content, sticky allows element take up full width, specify width as 100% for fixed
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba($color: variables.$primary, $alpha: 0.08); //alpha for opacity
+    background: variables.$solidWhite;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .cartFlex {
+        display: flex;
+        align-items: center;
+        p {
+            margin-bottom: 0;
+            width: 24px;
+            height: 24px;
+            background-color: variables.$primary;
+            color: variables.$solidWhite;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 1.1;
+        }
+        .menuIcon,
+        .bag {
+            margin-right: 15px;
+        }
+    }
+}
